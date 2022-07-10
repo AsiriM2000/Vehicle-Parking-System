@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OnDeliveryFormController">
+   <children>
+      <ComboBox fx:id="cmbInOut" layoutX="83.0" layoutY="32.0" onAction="#ChooseOnAction" prefWidth="150.0" AnchorPane.topAnchor="27.0" />
+      <Button layoutX="449.0" layoutY="32.0" mnemonicParsing="false" onAction="#AddVehicleOnAction" style="-fx-background-color: #059033;" text="Add Vehicle" AnchorPane.topAnchor="27.0" />
+      <Button layoutX="584.0" layoutY="32.0" mnemonicParsing="false" onAction="#AddDriverOnAction" style="-fx-background-color: #059033;" text="Add Driver" AnchorPane.topAnchor="27.0" />
+      <TableView fx:id="tblInVehicle" layoutX="83.0" layoutY="167.0" prefHeight="200.0" prefWidth="574.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="165.0">
+         <columns>
+            <TableColumn fx:id="colVehicleNum" prefWidth="147.0" text="Vehicle Number" />
+            <TableColumn fx:id="colVehicleType" prefWidth="141.0" text="Vehicle Type" />
+            <TableColumn fx:id="colDriverName" prefWidth="145.0" text="Driver Name" />
+            <TableColumn fx:id="colLeftTime" prefWidth="140.0" text="Left Time" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

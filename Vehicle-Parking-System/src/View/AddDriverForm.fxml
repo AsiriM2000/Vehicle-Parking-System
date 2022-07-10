@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddDriverFormController">
+   <children>
+      <Label layoutX="74.0" layoutY="52.0" text="Driver Name" />
+      <TextField fx:id="txtName" layoutX="245.0" layoutY="45.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label layoutX="74.0" layoutY="96.0" text="Driver NIC" />
+      <TextField fx:id="txtNic" layoutX="245.0" layoutY="89.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label layoutX="74.0" layoutY="163.0" text="Driver License No" />
+      <TextField fx:id="txtLicenseNo" layoutX="245.0" layoutY="156.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label layoutX="74.0" layoutY="214.0" text="Address" />
+      <TextField fx:id="txtAddress" layoutX="245.0" layoutY="207.0" prefHeight="71.0" prefWidth="232.0" />
+      <Label layoutX="74.0" layoutY="327.0" text="Contact No" />
+      <TextField fx:id="txtContact" layoutX="245.0" layoutY="320.0" prefHeight="25.0" prefWidth="232.0" />
+      <Button layoutX="552.0" layoutY="355.0" mnemonicParsing="false" onAction="#AddDriverOnAction" style="-fx-background-color: #059033;" text="Add Driver" />
+      <Button layoutX="643.0" layoutY="355.0" mnemonicParsing="false" onAction="#ViewOnAction" style="-fx-background-color: #059033;" text="View" />
+   </children>
+</AnchorPane>
